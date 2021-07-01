@@ -3,14 +3,15 @@ import React, { createContext } from "react";
 export const themes = {
   dark: {
     name: "dark",
-    background: "var(--dark-blue)",
-    color: "var(--white)",
-    text: "hello",
+    background: "hsl(209, 23%, 22%)",
+    color: "hsl(0, 0%, 100%)",
+    bg: "hsl(207, 26%, 17%)",
   },
   light: {
     name: "light",
-    background: "var(--white)",
-    text: "hello",
+    background: "hsl(0, 0%, 100%)",
+    color: "hsl(200, 15%, 8%)",
+    bg: "hsl(0, 0%, 98%)",
   },
 };
 

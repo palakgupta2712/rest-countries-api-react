@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Header from "./components/Header";
+import Container from "./components/Container";
 import ThemeContext, { themes } from "./theme";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <React.Fragment>
       <ThemeContext.Provider value={theme}>
         <Header toggleTheme={toggleTheme} />
+        <Container />
       </ThemeContext.Provider>
     </React.Fragment>
   );
