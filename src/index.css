@@ -22,4 +22,5 @@ code {
   --dark-blue-text: hsl(200, 15%, 8%);
   --light-gray: hsl(0, 0%, 98%);
   --dark-gray: hsl(0, 0%, 52%);
+  --white: white;
 }
