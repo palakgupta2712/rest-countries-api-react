@@ -28,4 +28,7 @@ const Div = styled.div`
   gap: 40px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   font-size: 14px;
+  @media (max-width: 320px) {
+    padding: 30px;
+  }
 `;

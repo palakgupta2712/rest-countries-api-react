@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import ThemeContext from "../theme";
 
@@ -6,7 +7,7 @@ function CountryCard({ country }) {
   const theme = useContext(ThemeContext);
 
   return (
-    <Container theme={theme}>
+    <Container theme={theme} to={`/${country.alpha3Code}`}>
       <Flag src={country.flag} height="100px" width="auto" />
       <Details>
         <Title>{country.name}</Title>
@@ -36,11 +37,14 @@ const Flag = styled.img`
   height: 10rem;
 `;
 
-const Container = styled.div`
+const Container = styled(Link)`
   background: ${(props) =>
     props.theme.name === "dark"
       ? props.theme.background
       : props.theme.background};
+  color: ${(props) =>
+    props.theme.name === "dark" ? props.theme.color : props.theme.color};
+  text-decoration: none;
   position: relative;
   border-radius: 0.5rem;
   transition: transform 0.2s, opacity 0.2s;

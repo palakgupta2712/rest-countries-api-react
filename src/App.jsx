@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Header from "./components/Header";
-import Container from "./components/Container";
 import ThemeContext, { themes } from "./theme";
+import Routes from "./routes/Routes";
 
 function App() {
   const [theme, setTheme] = useState(themes.dark);
@@ -13,7 +13,7 @@ function App() {
     <React.Fragment>
       <ThemeContext.Provider value={theme}>
         <Header toggleTheme={toggleTheme} />
-        <Container />
+        <Routes />
       </ThemeContext.Provider>
     </React.Fragment>
   );
