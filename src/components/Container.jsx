@@ -24,9 +24,8 @@ const Div = styled.div`
   color: ${(props) =>
     props.theme.name === "dark" ? props.theme.color : props.theme.color};
   display: grid;
-  @media (min-width: 300px) {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
-    gap: 20px;
-  }
+  padding: 50px;
+  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  font-size: 14px;
 `;
